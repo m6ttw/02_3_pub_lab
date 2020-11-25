@@ -9,5 +9,5 @@ class Pub():
     def increase_till(self, drink):
         self.till += drink.price
 
-    # def sell_drink_to_customer(self, drink_name, customer):
-    #     drink = self.find_pet_by
+    def sell_drink_to_customer(self, drink):
+        self.drinks_sold += 1
