@@ -1,10 +1,13 @@
 class Pub():
     
-    def __init__(self, name, till):
-        self.name = name
+    def __init__(self, pub_name, till, drinks):
+        self.pub_name = pub_name
         self.till = till
-        self.drinks = [{
-            
-        }]
+        self.drinks = drinks
+        self.drinks_sold = 0
 
-    
+    def increase_till(self, amount):
+        self.till += amount
+
+    # def sell_drink_to_customer(self, drink_name, customer):
+    #     drink = self.find_pet_by

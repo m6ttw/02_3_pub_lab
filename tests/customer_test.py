@@ -12,8 +12,12 @@ class TestCustomer(unittest.TestCase):
         self.customer = Customer("Frodo Baggins", 100)
 
     def test_customer_has_name(self):
-        self.assertEqual("Frodo Baggins", self.customer.name)
+        self.assertEqual("Frodo Baggins", self.customer.customer_name)
 
     def test_customer_has_money(self):
         self.assertEqual(100, self.customer.wallet)
+
+    def test_can_decrease_wallet(self):
+        self.customer.decrease_wallet(5)
+        self.assertEqual(95, self.customer.wallet)
     
