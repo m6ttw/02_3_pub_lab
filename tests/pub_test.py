@@ -18,5 +18,5 @@ class TestPub(unittest.TestCase):
         self.assertEqual(100, self.pub.till)
 
     def test_can_increase_till(self):
-        self.pub.increase_till(5)
+        self.pub.increase_till(self.drink_name_1)
         self.assertEqual(105, self.pub.till)

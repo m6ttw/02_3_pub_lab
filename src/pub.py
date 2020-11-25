@@ -6,8 +6,8 @@ class Pub():
         self.drinks = drinks
         self.drinks_sold = 0
 
-    def increase_till(self, amount):
-        self.till += amount
+    def increase_till(self, drink):
+        self.till += drink.price
 
     # def sell_drink_to_customer(self, drink_name, customer):
     #     drink = self.find_pet_by
