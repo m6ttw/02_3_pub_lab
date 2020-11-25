@@ -1,6 +1,7 @@
 import unittest
 from src.pub import Pub
 from src.drink import Drink
+from src.customer import Customer
 
 class TestPub(unittest.TestCase):
     def setUp(self):
@@ -10,6 +11,8 @@ class TestPub(unittest.TestCase):
 
         drinks = [self.drink_name_1, self.drink_name_2, self.drink_name_3]
         self.pub = Pub("The Prancing Pony", 100, drinks)
+
+        self.customer = Customer("Frodo Baggins", 100, 50)
 
     def test_pub_has_name(self):
         self.assertEqual("The Prancing Pony", self.pub.pub_name)

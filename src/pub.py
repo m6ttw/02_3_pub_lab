@@ -5,9 +5,12 @@ class Pub():
         self.till = till
         self.drinks = drinks
         self.drinks_sold = 0
+        self.customers = []
 
     def increase_till(self, drink):
-        self.till += drink.price
+        if customer.age >= 18:
+            self.till += drink.price
 
     def sell_drink_to_customer(self, drink):
-        self.drinks_sold += 1
+        if customer.age >= 18:
+            self.drinks_sold += 1
